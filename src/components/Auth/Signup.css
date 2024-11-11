@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.signup-form {
+    width: 50%;
+    max-width: 400px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.signup-form h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.signup-form p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.signup-form button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.signup-form .message {
+    color: #6a0dad;
+    margin-top: 1rem;
+}
+
+.signup-illustration {
+    width: 50%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-illustration img {
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .signup-form {
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 1.5rem;
+    }
+
+    .signup-illustration {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .signup-illustration img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .signup-form button[type="submit"] {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}

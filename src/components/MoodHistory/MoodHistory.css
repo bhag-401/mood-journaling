@@ -1,0 +1,115 @@
+.mood-history {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .mood-history-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mood-entry {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .mood-entry:hover {
+    transform: scale(1.02);
+  }
+  
+  .entry-date {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .entry-details {
+    margin-bottom: 10px;
+  }
+  
+  .entry-mood {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+  }
+  
+  .entry-mood.mood-happy {
+    background-color: #4caf50; /* Green for happy */
+  }
+  
+  .entry-mood.mood-sad {
+    background-color: #2196f3; /* Blue for sad */
+  }
+  
+  .entry-mood.mood-angry {
+    background-color: #f44336; /* Red for angry */
+  }
+  
+  .entry-mood.mood-anxious {
+    background-color: #ff9800; /* Orange for anxious */
+  }
+  
+  .entry-mood.mood-excited {
+    background-color: #9c27b0; /* Purple for excited */
+  }
+  
+  .entry-mood.mood-relaxed {
+    background-color: #3f51b5; /* Indigo for relaxed */
+  }
+  
+  .entry-notes {
+    font-size: 0.95em;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .entry-tags {
+    margin: 10px 0;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    padding: 3px 8px;
+    margin-right: 5px;
+    font-size: 0.8em;
+    color: #555;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .no-entries {
+    text-align: center;
+    color: #999;
+  }
+  
